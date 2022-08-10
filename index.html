@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainbow Mood</title>
 </head>
 <body>
-    <h1>
-        <span>R</span>
-        <span>a</span>
-        <span>i</span>
-        <span>n</span>
-        <span>b</span>
-        <span>o</span>
-        <span>w</span>
-        <span>Mood</span>
-    </h1>
+    <form class="login_form hidden">
+        <h1 class="login_title">
+            <span>R</span>
+            <span>a</span>
+            <span>i</span>
+            <span>n</span>
+            <span>b</span>
+            <span>o</span>
+            <span>w</span>
+            <span>Mood</span>
+        </h1>
+        <h2>반가워요, 당신의 이름을 알려주세요.</h2>
+        <div>
+        <input class = username type="text" required placeholder="이름을 적어 주세요..">
+        <button class = username_submit type="submit"><i class="fa-light fa-circle-arrow-right fa-xl"></i></button>
+        </div>
+    </form>
+    
+    <div class="center_container">
+        <div class="time_greeting">
+            <span class="time">00:00:00</span>
+            <span class="greeting"> kiminda님 반갑습니다.</span>
+        </div>
+        <div class="todo_container">
+            <span class="todo_subtitle">오늘 해야 할 일이 있나요?</span>
+            <input class="todo_input" type="text" />
+        </div>
+    </div>
+    
+    <script src="js/login.js"></script>
+    <script src="https://kit.fontawesome.com/cc34d7497c.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

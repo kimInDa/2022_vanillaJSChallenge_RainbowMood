@@ -1,0 +1,58 @@
+
+.login_form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_title {
+    display: flex;
+    font-size: 0;
+}
+.login_title span {
+    font-size: 70px;
+    z-index: 0;
+}
+.login_title span:first-child {
+    color: var(--red);
+}
+.login_title span:nth-child(2) {
+    color: var(--orange);
+}
+.login_title span:nth-child(3) {
+    color: var(--yellow);
+}
+.login_title span:nth-child(4) {
+    color: var(--green);
+}
+.login_title span:nth-child(5) {
+    color: var(--blue);
+}
+.login_title span:nth-child(6) {
+    color: var(--navy);
+}
+.login_title span:nth-child(7) {
+    color: var(--purple);
+    margin-right: 15px;
+}
+
+.username {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.username:focus {
+    outline: none;
+}
+.username:focus::placeholder {
+    opacity: 0%;
+}
+.username_submit {
+    background-color: inherit;
+    border: none;
+}
+
