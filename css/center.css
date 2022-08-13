@@ -1,0 +1,31 @@
+.clock_greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.clock {
+    font-size: 100px;
+    font-weight: 700;
+}
+.greeting {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.todo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo_subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.todo_input {
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid black;
+}

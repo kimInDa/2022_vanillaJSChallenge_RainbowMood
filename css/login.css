@@ -14,41 +14,36 @@
 }
 .login_title span {
     font-size: 70px;
-    z-index: 0;
+    color: white;
+    background: repeating-linear-gradient(-45deg, red 0%, orange 7.14%, yellow 14.28%, green 21.4%, blue 28.56%, navy 35.7%, magenta 42.84%, red 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    animation: ani 15s linear infinite forwards;
 }
-.login_title span:first-child {
-    color: var(--red);
-}
-.login_title span:nth-child(2) {
-    color: var(--orange);
-}
-.login_title span:nth-child(3) {
-    color: var(--yellow);
-}
-.login_title span:nth-child(4) {
-    color: var(--green);
-}
-.login_title span:nth-child(5) {
-    color: var(--blue);
-}
-.login_title span:nth-child(6) {
-    color: var(--navy);
-}
-.login_title span:nth-child(7) {
-    color: var(--purple);
-    margin-right: 15px;
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
 }
 
-.username {
+.username_input {
     width: 200px;
     height: 30px;
-    border: none;
-    border-bottom: 1px solid black;
+    border: 3px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
 }
-.username:focus {
+
+.username_input:focus {
     outline: none;
 }
-.username:focus::placeholder {
+.username_input:focus::placeholder {
     opacity: 0%;
 }
 .username_submit {
