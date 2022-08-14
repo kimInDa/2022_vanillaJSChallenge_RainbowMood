@@ -37,7 +37,7 @@
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    background-color: transparent;
+    background: none;
 }
 
 .username_input:focus {

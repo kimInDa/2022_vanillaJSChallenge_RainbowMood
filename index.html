@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="css/center.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/variable.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainbow Mood</title>
 </head>
 <body>
@@ -24,22 +25,37 @@
         </div>
     </form>
     
-    <div class="main_container">
+    <div class="main_container hidden">
         <div class="center_container">
             <div class="clock_greeting">
-                <span class="clock">00:09:18</span>
+                <span class="clock"></span>
                 <span class="greeting"> kiminda님 반갑습니다.</span>
             </div>
             <div class="todo_container">
                 <span class="todo_subtitle">오늘 해야 할 일이 있나요?</span>
-                <input class="todo_input" type="text" />
+                <form class="todo_form">
+                    <input class="todo_input" type="text" />
+                </form>
+                <ul class="todo_list"></ul>
             </div>
         </div>
+        <div class="quotes_container">
+            <span class="quote"></span>
+            <span class="author"></span>
+        </div>
+        <div class="weather_container">
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    
+
+
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
     <script src="https://kit.fontawesome.com/cc34d7497c.js" crossorigin="anonymous"></script>
 </body>
 </html>

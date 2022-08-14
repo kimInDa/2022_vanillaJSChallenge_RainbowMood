@@ -1,0 +1,15 @@
+.logout_form {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.logout_btn {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.logout_btn i {
+    margin-right: 5px;
+}
