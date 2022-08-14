@@ -43,14 +43,26 @@
 .todo_input:focus {
     outline: none;
 }
-
+.todo_list {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 50px;
+}
+.todo_list::-webkit-scrollbar {
+    display: none;
+}
 .todo_list li::marker {
     content: "\f00c";
     font-family: FontAwesome;
 }
 .todo_list li span {
     font-size: 25px;
-    margin-left: 10px;
+    margin-left: 10px;;
 }
 .todo_list li button {
     background: none;
