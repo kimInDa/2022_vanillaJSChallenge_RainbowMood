@@ -11,7 +11,6 @@ function handleUsernameSubmit(event) {
     const greeting = document.querySelector(".greeting"); 
     greeting.innerText = `${savedUsername}님 반갑습니다.`
     main.classList.remove("hidden");
-
 }
 
 loginForm.addEventListener("submit", handleUsernameSubmit);
